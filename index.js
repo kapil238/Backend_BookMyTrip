@@ -16,7 +16,7 @@ const destinationRoutes = require('./routes/destinationRoutes');
 const trendingPlaceRoutes = require('./routes/trendingPlaceRoutes');
 const faqRoutes = require('./routes/faqRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
-const paymentRoutes = require('./routes/paymentRoutes');
+// const paymentRoutes = require('./routes/paymentRoutes');
 
 dotenv.config();
 
@@ -39,7 +39,7 @@ app.use('/api/bookmytrip/destinations', destinationRoutes);
 app.use('/api/bookmytrip/trendingplaces', trendingPlaceRoutes);
 app.use('/api/bookmytrip/faq', faqRoutes);
 app.use('/api/bookmytrip/booking', bookingRoutes);
-app.use('/api/payment', paymentRoutes);
+// app.use('/api/payment', paymentRoutes);
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
